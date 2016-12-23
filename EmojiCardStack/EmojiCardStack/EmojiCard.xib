@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmojiCard" customModule="EmojiCardStack" customModuleProvider="target">
+            <connections>
+                <outlet property="cardSuitLabel" destination="3XC-fx-I2p" id="Goq-d0-6dY"/>
+                <outlet property="cardValueLeft" destination="8D8-pG-r9z" id="ThJ-O9-mDh"/>
+                <outlet property="cardValueRight" destination="GVe-Ga-72q" id="dgP-tP-gBw"/>
+                <outlet property="views" destination="iN0-l3-epB" id="4zR-0d-GGx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8D8-pG-r9z">
+                    <rect key="frame" x="24" y="40" width="61" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3XC-fx-I2p">
+                    <rect key="frame" x="94.5" y="167" width="187.5" height="333.5"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Label">
+                            <attributes>
+                                <font key="NSFont" size="36" name=".SFNSDisplay"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="clipping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVe-Ga-72q">
+                    <rect key="frame" x="290" y="592" width="49" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="GVe-Ga-72q" secondAttribute="bottom" constant="51" id="Auq-Pe-mjh"/>
+                <constraint firstItem="8D8-pG-r9z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="ZZk-iJ-Kdk"/>
+                <constraint firstItem="3XC-fx-I2p" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Zdi-TW-4wL"/>
+                <constraint firstAttribute="trailing" secondItem="GVe-Ga-72q" secondAttribute="trailing" constant="36" id="mfa-jJ-2Bq"/>
+                <constraint firstItem="3XC-fx-I2p" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="mhE-se-bYz"/>
+                <constraint firstItem="3XC-fx-I2p" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qlM-vR-zY9"/>
+                <constraint firstItem="8D8-pG-r9z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="rW1-wJ-Iz6"/>
+                <constraint firstItem="3XC-fx-I2p" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.5" id="xhs-PR-bVR"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
